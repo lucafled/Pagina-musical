@@ -267,19 +267,22 @@ h1 {
 }
 
 
-
-
+/* ==========================================================================
+   Fondo de imagen para la portada (Corregido con máxima prioridad)
+   ========================================================================== */
 .portada {
-  min-height: 88vh;
-  display: grid;
-  align-content: end;
-  padding: 5rem max(1.25rem, 8vw);
-  color: #fff;
-  /* El linear-gradient crea una capa oscura semitransparente sobre tu foto para que el texto blanco se lea perfecto */
+  min-height: 88vh !important;
+  display: grid !important;
+  align-content: end !important;
+  padding: 5rem max(1.25rem, 8vw) !important;
+  color: #fff !important;
+  
+  /* Forzamos que use tu imagen 'fondo.png' con la capa oscura encima */
   background: 
     linear-gradient(rgba(24, 34, 36, 0.85), rgba(24, 34, 36, 0.45)),
-    url("fondo.png");
-  background-size: cover;       /* Hace que la foto cubra toda la portada sin deformarse */
-  background-position: center;   /* Centra la imagen de fondo */
-  background-repeat: no-repeat;  /* Evita que la imagen se duplique */
+    url("fondo.png") !important;
+    
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
