@@ -339,3 +339,45 @@ h1 {
     will-change: auto;
   }
 }
+
+
+
+
+/* Contenedor del indicador */
+.indicador-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+/* Dibujo de la flecha usando bordes de CSS */
+.flecha {
+  width: 24px;
+  height: 24px;
+  border-right: 3px solid var(--rojo); /* Usa el color rojo de tu paleta */
+  border-bottom: 3px solid var(--rojo);
+  transform: rotate(45deg); /* Gira el cuadrado para que parezca una punta de flecha (v) */
+  animation: rebotar 2s infinite; /* Aplica la animación en bucle */
+}
+
+/* Animación de rebote suave */
+@keyframes rebotar {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}
+
+/* Opcional: Si el usuario prefiere no ver animaciones en su sistema operativo, se desactiva */
+@media (prefers-reduced-motion: reduce) {
+  .flecha {
+    animation: none;
+  }
+}
