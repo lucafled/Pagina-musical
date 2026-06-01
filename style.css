@@ -381,3 +381,20 @@ h1 {
     animation: none;
   }
 }
+
+
+/* Ajustes para las nuevas imágenes dentro de los paneles */
+.contenedor-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0; /* Quitamos padding para que la foto llene el recuadro si es grande */
+}
+
+.foto-panel {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen sin estirarla ni romper sus proporciones */
+  border-radius: 8px; /* Redondea las esquinas de la foto para combinar */
+}
