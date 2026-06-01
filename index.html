@@ -1,9 +1,30 @@
-<main>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desplazamiento horizontal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="portada">
+      <p class="etiqueta">Musica 1</p>
+      <h1>Un recorrido por los impactos de tik tok en nuestros gustos musicales.</h1>
+      <p class="bajada">
+        Aqui podras descubrir como ha sido impactada nuestra relacion con la musica ahora que tik tok es un gran exponente de promocion de la misma.
+      </p>
+      <p class="meta">Luca Flores A01783655</p>
+      <p class="meta">Ximena Hernandez A01782567</p>
+      <p class="meta">Daniela Medina A01789070</p>
+      <p class="meta">Oswaldo Domínguez A01783184</p>
+    </header>
+
+    <main>
       <section class="intro">
         <p class="lead">
-          ¿Nuestros gustos musicales son verdaderamente de nosotros? Desliza hacia abajo y descubre más.
-        </p>
-        <div class="indicador-scroll" aria-hidden="true">
+          ¿Nuestros gustos musicales son verdadermante de nosotros? </p> Desliza hacia abajo y descrubre mas.</p>
+        <p>
+         <div class="indicador-scroll" aria-hidden="true">
           <span class="flecha"></span>
         </div>
       </section>
@@ -15,14 +36,15 @@
           </div>
 
           <div class="pista" id="pista">
-            
             <article class="panel panel-inicio">
               <p class="etiqueta">PERFIL DE RESPUESTAS</p>
               <h2>Predominancia de estudiantes jóvenes.</h2>
               <p>
                 La mayoría de las personas encuestadas se ubicó entre los 18 y 22 años, principalmente estudiantes, lo que muestra una muestra enfocada en gustos musicales de jóvenes universitarios.</p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/perfilrespuesta.png" alt="Gráfico de estudiantes" class="foto-panel">
+              <div class="visual linea-tiempo" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </article>
 
@@ -31,8 +53,11 @@
               <h2>La música alternativa destacó preferencia</h2>
               <p>
                 Entre las respuestas, el género alternativo apareció como una de las preferencias principales, mostrando interés por sonidos menos comerciales y propuestas musicales más experimentales.</p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/generomusical.png" alt="Gráfico de música alternativa" class="foto-panel">
+              <div class="visual barras" aria-hidden="true">
+                <span style="--alto: 36%"></span>
+                <span style="--alto: 54%"></span>
+                <span style="--alto: 78%"></span>
+                <span style="--alto: 48%"></span>
               </div>
             </article>
 
@@ -41,8 +66,12 @@
               <h2>“Billie Jean” obtuvo alta aceptación</h2>
               <p>
                 Dentro de las canciones de pop, “Billie Jean” de Michael Jackson recibió una de las calificaciones más altas, reflejando que los clásicos siguen conectando con oyentes jóvenes.</p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/cancionmejorvalorada.png" alt="Gráfico de Billie Jean" class="foto-panel">
+              <div class="visual mapa" aria-hidden="true">
+                <span class="zona zona-a"></span>
+                <span class="zona zona-b"></span>
+                <span class="punto punto-a"></span>
+                <span class="punto punto-b"></span>
+                <span class="punto punto-c"></span>
               </div>
             </article>
 
@@ -51,41 +80,59 @@
               <h2>Nirvana generó una respuesta fuerte</h2>
               <p>
                 “Smells Like Teen Spirit” de Nirvana fue una de las canciones mejor percibidas dentro del bloque de rock, asociándose con energía, intensidad y una sensación de rebeldía.</p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/rockyenergia.png" alt="Gráfico de Nirvana" class="foto-panel">
+              <div class="visual detalle" aria-hidden="true">
+                <strong>68%</strong>
+                <span>caso destacado</span>
               </div>
             </article>
             
+            
+            <!--asdfghjkjhgfdsasdfghjkjhgfdsdfghjhgfdxz-->
             <article class="panel panel-mapa">
               <p class="etiqueta">EMOCIONES MUSICALES</p>
               <h2>La música fue asociada con nostalgia y felicidad</h2>
               <p>
                 En las respuestas abiertas sobre lo que hicieron sentir las canciones, las emociones más coherentes fueron felicidad, nostalgia, energía y tranquilidad, dependiendo del género escuchado.</p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/emociones.png" alt="Gráfico de emociones" class="foto-panel">
+              <div class="visual mapa" aria-hidden="true">
+                <span class="zona zona-a"></span>
+                <span class="zona zona-b"></span>
+                <span class="punto punto-a"></span>
+                <span class="punto punto-b"></span>
+                <span class="punto punto-c"></span>
               </div>
             </article>
+            <!--asdfghjkjhgfdsasdfghjkjhgfdsdfghjhgfdxz-->
+
+
 
             <article class="panel panel-cierre">
               <p class="etiqueta">ELECTRÓNICA Y MOVIMIENTO</p>
               <h2>Daft Punk y Avicii destacaron en electrónica</h2>
               <p> 
-                Canciones como “One More Time” y “Levels” fueron bien recibidas, mostrando que la música electrónica se relaciona con emociones positivas, ritmo y ganas de moverse.
-              </p>
-              <div class="visual contenedor-foto">
-                <img src="/Users/lucaflores/Documents/GitHub/mi-scroll-horizontal2/electrinicaymov.png" alt="Gráfico de electrónica" class="foto-panel">
+                Canciones como “One More Time” y “Levels” fueron bien recibidas, mostrando que la música electrónica se relaciona con emociones positivas, ritmo y ganas de moverse.              </p>
+              <div class="visual cierre-visual" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </article>
-
           </div>
         </div>
       </section>
 
+
+
+
+
       <section class="nota-final">
-        <p class="etiqueta">Conclusión</p>
-        <h2>El algoritmo como el nuevo director de orquesta</h2>
+        <p class="etiqueta">Sugerencia</p>
+        <h2>Cuándo usar esta plantilla</h2>
         <p>
-          Ya sea a través de clásicos revividos o nuevos géneros alternativos, TikTok ha demostrado que tiene el poder de moldear la cultura pop de los estudiantes actuales. ¿Qué canción descubriste hoy gracias a tu pantalla?
+          Úsala cuando la estructura lateral aporte sentido: cronologías, rutas, antes/después, secuencias de decisiones o comparaciones que necesitan verse como un recorrido.
         </p>
       </section>
     </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
