@@ -1,8 +1,8 @@
 :root {
-  --fondo: #f7f4ee;
+  --fondo: #e6ebfa;
   --texto: #202124;
   --muted: #66695f;
-  --linea: #d8d0c1;
+  --linea: #7393f5;
   --panel: #ffffff;
   --azul: #276e92;
   --verde: #25745b;
@@ -264,4 +264,22 @@ h1 {
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
+}
+
+
+
+
+.portada {
+  min-height: 88vh;
+  display: grid;
+  align-content: end;
+  padding: 5rem max(1.25rem, 8vw);
+  color: #fff;
+  /* El linear-gradient crea una capa oscura semitransparente sobre tu foto para que el texto blanco se lea perfecto */
+  background: 
+    linear-gradient(rgba(24, 34, 36, 0.85), rgba(24, 34, 36, 0.45)),
+    url("fondo.png");
+  background-size: cover;       /* Hace que la foto cubra toda la portada sin deformarse */
+  background-position: center;   /* Centra la imagen de fondo */
+  background-repeat: no-repeat;  /* Evita que la imagen se duplique */
 }
