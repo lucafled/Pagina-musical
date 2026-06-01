@@ -173,133 +173,6 @@ h1 {
   background: #f5f0e8;
 }
 
-.linea-tiempo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.linea-tiempo::before {
-  content: "";
-  position: absolute;
-  left: 12%;
-  right: 12%;
-  top: 50%;
-  height: 3px;
-  background: var(--azul);
-}
-
-.linea-tiempo span {
-  position: relative;
-  width: 3.2rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--amarillo);
-  border: 6px solid #f5f0e8;
-}
-
-.barras {
-  display: flex;
-  align-items: end;
-  gap: 0.9rem;
-  padding: 2rem;
-}
-
-.barras span {
-  flex: 1;
-  height: var(--alto);
-  min-height: 2rem;
-  border-radius: 8px 8px 0 0;
-  background: var(--azul);
-}
-
-.mapa {
-  position: relative;
-  overflow: hidden;
-}
-
-.zona,
-.punto {
-  position: absolute;
-  display: block;
-}
-
-.zona {
-  border: 2px solid rgba(32, 33, 36, 0.18);
-  background: rgba(37, 116, 91, 0.24);
-}
-
-.zona-a {
-  inset: 16% 48% 18% 10%;
-  border-radius: 48% 34% 44% 30%;
-}
-
-.zona-b {
-  inset: 22% 12% 12% 42%;
-  border-radius: 32% 54% 36% 48%;
-  background: rgba(39, 110, 146, 0.24);
-}
-
-.punto {
-  width: 1.1rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--rojo);
-  box-shadow: 0 0 0 0.8rem rgba(181, 72, 76, 0.16);
-}
-
-.punto-a {
-  left: 28%;
-  top: 45%;
-}
-
-.punto-b {
-  left: 62%;
-  top: 32%;
-}
-
-.punto-c {
-  left: 70%;
-  top: 64%;
-}
-
-.detalle {
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
-.detalle strong {
-  color: var(--rojo);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(5rem, 12vw, 9rem);
-  line-height: 0.9;
-}
-
-.detalle span {
-  color: var(--muted);
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.cierre-visual {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 1.5rem;
-}
-
-.cierre-visual span {
-  border-radius: 8px;
-  background: linear-gradient(180deg, var(--verde), var(--azul));
-}
-
-.cierre-visual span:nth-child(2) {
-  background: linear-gradient(180deg, var(--amarillo), var(--rojo));
-}
-
 @media (max-width: 820px) {
   .recorrido {
     height: auto;
@@ -340,10 +213,7 @@ h1 {
   }
 }
 
-
-
-
-/* Contenedor del indicador */
+/* Contenedor del indicador de scroll */
 .indicador-scroll {
   display: flex;
   justify-content: center;
@@ -352,17 +222,16 @@ h1 {
   padding: 1rem;
 }
 
-/* Dibujo de la flecha usando bordes de CSS */
+/* Dibujo de la flecha animada */
 .flecha {
   width: 24px;
   height: 24px;
-  border-right: 3px solid var(--rojo); /* Usa el color rojo de tu paleta */
+  border-right: 3px solid var(--rojo);
   border-bottom: 3px solid var(--rojo);
-  transform: rotate(45deg); /* Gira el cuadrado para que parezca una punta de flecha (v) */
-  animation: rebotar 2s infinite; /* Aplica la animación en bucle */
+  transform: rotate(45deg);
+  animation: rebotar 2s infinite;
 }
 
-/* Animación de rebote suave */
 @keyframes rebotar {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0) rotate(45deg);
@@ -375,26 +244,24 @@ h1 {
   }
 }
 
-/* Opcional: Si el usuario prefiere no ver animaciones en su sistema operativo, se desactiva */
 @media (prefers-reduced-motion: reduce) {
   .flecha {
     animation: none;
   }
 }
 
-
-/* Ajustes para las nuevas imágenes dentro de los paneles */
+/* Ajustes para las fotos adaptadas */
 .contenedor-foto {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 0; /* Quitamos padding para que la foto llene el recuadro si es grande */
+  padding: 0;
 }
 
 .foto-panel {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ajusta la imagen sin estirarla ni romper sus proporciones */
-  border-radius: 8px; /* Redondea las esquinas de la foto para combinar */
+  object-fit: contain;
+  border-radius: 8px;
 }
