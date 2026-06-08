@@ -267,9 +267,7 @@ h1 {
 }
 
 
-/* ==========================================================================
-   Fondo de imagen para la portada (Corregido con máxima prioridad)
-   ========================================================================== */
+
 .portada {
   min-height: 88vh !important;
   display: grid !important;
@@ -277,7 +275,8 @@ h1 {
   padding: 5rem max(1.25rem, 8vw) !important;
   color: #fff !important;
   
-  /* Forzamos que use tu imagen 'fondo.png' con la capa oscura encima */
+
+  
   background: 
     linear-gradient(rgba(24, 34, 36, 0.85), rgba(24, 34, 36, 0.45)),
     url("fondo.png") !important;
@@ -285,4 +284,36 @@ h1 {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+
+
+.contenedor-boton {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-recomendador {
+  display: inline-block;
+  background-color: var(--rojo);
+  color: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(181, 72, 76, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-recomendador:hover {
+  background-color: #943538;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(181, 72, 76, 0.45);
+}
+
+.btn-recomendador:active {
+  transform: translateY(-1px);
 }
